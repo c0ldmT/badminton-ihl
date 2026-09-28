@@ -28,7 +28,8 @@ Drizzle, Better Auth, Vitest, npm-Skripte, `.env`). Das Skript setzt diese Task 
 - `web/` existiert, `bash scripts/check.sh` ist grün
 
 ### T002 · DB-Anbindung und Health-Check
-status: open | depends: T001 | spec: 5
+status: blocked | depends: T001 | spec: 5
+> BLOCKED: Autopilot: 3 Fehlversuche, zuletzt am Gate 'spec'. Patch: .autopilot/blocked/T002_20260928-201304.patch. Log: .autopilot/logs/20260928-200017_T002.md
 Drizzle-Client in `web/src/server/db/index.ts` nutzt `DATABASE_URL`. Route
 `GET /api/health` liefert JSON `{ status: "ok", db: "up" | "down" }` und prüft die DB mit
 `select 1`. Fehler der DB führen zu `db: "down"` und HTTP 503, nicht zu einem Absturz.
