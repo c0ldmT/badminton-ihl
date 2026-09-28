@@ -1,0 +1,30 @@
+# Nur für die Entwicklung (Agenten-Loop, Tests). Produktion: compose.yml (Task T031).
+# Start:  docker compose -f compose.dev.yml up -d
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: liga
+      POSTGRES_PASSWORD: liga_dev_pw
+      POSTGRES_DB: liga
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata_dev:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U liga -d liga"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  mailpit:
+    # Fängt E-Mails lokal ab (Passwort-Reset, T028). Web-UI: http://localhost:8025
+    image: axllent/mailpit:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:1025:1025"
+      - "127.0.0.1:8025:8025"
+
+volumes:
+  pgdata_dev:

@@ -1,0 +1,11 @@
+# Autopilot (Logs, Patches blockierter Tasks)
+.autopilot/
+autopilot/.venv/
+autopilot/.env
+__pycache__/
+*.pyc
+.pytest_cache/
+# OpenCode
+.opencode/cache/
+# Node (web/ hat zusätzlich eine eigene .gitignore)
+node_modules/
