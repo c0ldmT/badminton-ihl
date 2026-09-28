@@ -45,7 +45,7 @@ class Settings:
     coder_timeout_min: int = _int("CODER_TIMEOUT_MIN", 45)
     check_timeout_min: int = _int("CHECK_TIMEOUT_MIN", 20)
     check_build: str = os.getenv("CHECK_BUILD", "1")
-    max_revisions: int = _int("MAX_REVISIONS", 3)
+    max_revisions: int = _int("MAX_REVISIONS", 5)
     max_blocked_in_row: int = _int("MAX_BLOCKED_IN_ROW", 2)
     review_diff_chars: int = _int("REVIEW_DIFF_CHARS", 48000)
     reset_db_on_rollback: bool = os.getenv("RESET_DB_ON_ROLLBACK", "1") == "1"
