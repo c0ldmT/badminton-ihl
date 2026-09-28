@@ -21,7 +21,7 @@ Zeile `> BLOCKED: ...` – zum Freigeben Grund klären, Zeile löschen, Status a
 ## Backlog
 
 ### T001 · Web-Grundgerüst (per Skript, nicht durch Agenten)
-status: open | depends: - | spec: 4
+status: done | depends: - | spec: 4
 Wird deterministisch durch `bash scripts/bootstrap-web.sh` erzeugt (Next.js 16, Tailwind,
 Drizzle, Better Auth, Vitest, npm-Skripte, `.env`). Das Skript setzt diese Task auf `done`.
 **Akzeptanz**
