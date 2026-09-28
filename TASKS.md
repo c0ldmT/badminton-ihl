@@ -40,7 +40,7 @@ Drizzle-Client in `web/src/server/db/index.ts` nutzt `DATABASE_URL`. Route
 - Schema-Tabellen, Auth
 
 ### T003 · Schema-Task: Better-Auth-Tabellen + Spieler-Zusatzfelder
-status: open | depends: T002 | spec: 3.1, 5
+status: done | depends: T002 | spec: 3.1, 5
 Drizzle-Schema für die von Better Auth benötigten Tabellen (user, session, account,
 verification) in `web/src/server/db/schema/auth.ts`. Die `user`-Tabelle ist die
 Spieler-Tabelle aus Spec §5 und bekommt zusätzlich: `displayName` (text, not null),
