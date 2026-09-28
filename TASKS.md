@@ -54,7 +54,8 @@ Spieler-Tabelle aus Spec §5 und bekommt zusätzlich: `displayName` (text, not n
 - Auth-Konfiguration, UI
 
 ### T004 · Better-Auth-Konfiguration (E-Mail/Passwort, kein Signup)
-status: open | depends: T003 | spec: 3.1, 6
+status: blocked | depends: T003 | spec: 3.1, 6
+> BLOCKED: Autopilot: 3 Fehlversuche, zuletzt am Gate 'spec'. Patch: .autopilot/blocked/T004_20260928-221957.patch. Log: .autopilot/logs/20260928-213020_T004.md
 `web/src/server/auth.ts` konfiguriert Better Auth mit Drizzle-Adapter (provider "pg"),
 E-Mail+Passwort aktiv, öffentliche Registrierung deaktiviert, Rate-Limit aktiv, die
 Zusatzfelder aus T003 als `additionalFields`. API-Route `app/api/auth/[...all]/route.ts`.
