@@ -80,7 +80,7 @@ Existiert die E-Mail bereits, wird nur `role` auf admin gesetzt.
 - UI
 
 ### T006 · Login/Logout-UI und Zugriffsschutz
-status: open | depends: T004 | spec: 3.1, 6, 7
+status: done | depends: T004 | spec: 3.1, 6, 7
 Mobile-first Login-Seite `/login` (E-Mail, Passwort, deutsche Fehlermeldungen, große
 Touch-Ziele), Logout-Button im Layout. Alle Seiten außer `/login`, `/invite/*`,
 `/reset-password/*` und `/api/*` erfordern Login (serverseitige Prüfung im Layout bzw.
