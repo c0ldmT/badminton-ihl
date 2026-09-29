@@ -69,7 +69,7 @@ Helper `getCurrentUser()` und `requireUser()`/`requireAdmin()` in
 - Login-UI, Einladungen
 
 ### T005 · Admin-Seed-Skript
-status: open | depends: T004 | spec: 3.9
+status: done | depends: T004 | spec: 3.9
 `npm run seed:admin -- --email a@b.de --password ... --name "Max"` legt einen aktiven
 Admin an (über die Better-Auth-Server-API, damit das Passwort korrekt gehasht wird).
 Existiert die E-Mail bereits, wird nur `role` auf admin gesetzt.

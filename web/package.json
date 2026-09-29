@@ -11,7 +11,8 @@
     "test": "vitest run --passWithNoTests",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "seed:admin": "tsx scripts/seed-admin.ts"
   },
   "dependencies": {
     "better-auth": "^1.7.6",
